@@ -10,8 +10,8 @@ cbracket = "{|}|?|@"
 
 comment start "//"
 
-function = "abs|sgn|int|round|roundup|truncate|mround|ceiling|floor|remainder|sin|cos|tan|atn|pi|sqr|exp|log",
-	"join|ubound" nonsensitive
+function = "sysdate|isopen|found|notfound|rowcount|commit|rollback|sqlerrm|substr|cast|decode|length|lower|upper",
+	"avg|count|sum|max|min|nvl|trim|to_date|to_char|lpad|ltrim|rpad|rtrim|trunc|to_number" nonsensitive
 
 keyword = "if|elsif|else|loop|end|loop|for|case|end case|continue|return|goto|or|and|not|like" nonsensitive
 
@@ -20,6 +20,7 @@ symbol = "true|false|null" nonsensitive
 type = "number|integer|varchar2|boolean|date" nonsensitive
 
 string delim "'" "'"
+string delim '"' '"'
 
 include "sql.lang"
 include "function.lang"
