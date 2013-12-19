@@ -13,7 +13,8 @@ comment start "//"
 function = "sysdate|isopen|found|notfound|rowcount|commit|rollback|sqlerrm|substr|cast|decode|length|lower|upper",
 	"avg|count|sum|max|min|nvl|trim|to_date|to_char|lpad|ltrim|rpad|rtrim|trunc|to_number" nonsensitive
 
-keyword = "if|elsif|else|loop|end|loop|for|case|end case|continue|return|goto|or|and|not|like" nonsensitive
+keyword = "if|elsif|else|loop|end|loop|for|case|end case|continue|return|goto|or|and|not|like",
+ 	"end|then|exception|when|others|begin|in|out|is|as|exit|open|fetch|into|close|type|rowtype|default|extend|count|first|last|next|nextval|currval" nonsensitive
 
 symbol = "true|false|null" nonsensitive
 
