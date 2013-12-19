@@ -1,0 +1,27 @@
+#
+# author:	Craig Buchanan (craig.buchanan@cogniza.com)
+# created:	2013/12/18
+# purpose:	language definition for Oracle's PL/SQL
+#
+
+# vardef SPECIALCHAR = '\\.'
+
+cbracket = "{|}|?|@"
+
+comment start "//"
+
+function = "abs|sgn|int|round|roundup|truncate|mround|ceiling|floor|remainder|sin|cos|tan|atn|pi|sqr|exp|log",
+	"join|ubound" nonsensitive
+
+keyword = "if|elsif|else|loop|end|loop|for|case|end case|continue|return|goto|or|and|not|like" nonsensitive
+
+symbol = "true|false|null" nonsensitive
+
+type = "number|integer|varchar2|boolean|date" nonsensitive
+
+string delim "'" "'"
+
+include "sql.lang"
+include "function.lang"
+include "symbols.lang"
+include "number.lang"
